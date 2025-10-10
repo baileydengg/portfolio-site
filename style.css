@@ -282,6 +282,10 @@ section {
     flex-direction: column;
 }
 
+.uci-logo {
+    height: 4rem;
+}
+
 .coursework-container {
     margin-top: 20px;
     margin-left: 5px;
@@ -304,7 +308,6 @@ section {
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
 }
 
 .details-container {
@@ -330,7 +333,7 @@ section {
 
 /* SKILLS SECTION */
 
-#experience {
+#skills {
     position: relative;
 }
 
