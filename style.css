@@ -299,7 +299,6 @@ section {
 
 .about-pic {
     border-radius: 2rem;
-    margin-left: 50px;
 }
 
 .arrow {
@@ -319,7 +318,7 @@ section {
 }
 
 .section-container {
-    gap: 7rem;
+    gap: 5rem;
     height: 60%;
 }
 
@@ -329,20 +328,20 @@ section {
     margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
 #experience {
     position: relative;
 }
 
-.experience-sub-title {
+.skills-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skills-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
