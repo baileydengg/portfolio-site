@@ -289,12 +289,9 @@ section {
 
 .education-container {
     display: flex;
-    width: 500%;
     gap: 2rem;
-}
-
-.uci-logo {
-    height: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .coursework-container {
@@ -333,14 +330,21 @@ section {
 }
 
 .section-container {
-    gap: 5rem;
-    height: 60%;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.text-container {
+    max-width: 60rem;
+    text-align: center;
+    margin: auto;
 }
 
 /* SKILLS SECTION */
