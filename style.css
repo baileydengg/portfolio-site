@@ -169,9 +169,9 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/* PROFILE/HOME SECTION */
 
-#profile {
+#home {
   display: flex;
   justify-content: center;
   gap: 5rem;

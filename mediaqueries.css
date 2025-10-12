@@ -1,11 +1,13 @@
 @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-    margin-top: 100px;
+  #home {
+    padding-top: 10vh;
   }
   .about-containers {
     flex-wrap: wrap;
+  }
+
+  section {
+    padding-top: 11vh;
   }
 
   .header {
@@ -25,9 +27,9 @@
     margin-top: 2rem;
   }
 
-  #profile {
+  #home {
+    padding-top: 20vh;
     display: block;
-    margin-top: 150px;
   }
 
   .section-container {
@@ -67,10 +69,10 @@
   footer {
     height: 40vh;
   }
-  #profile {
+  #home {
+    padding-top: 20vh;
     height: 83vh;
-    margin-top: 150px;
-    margin-bottom: 0;
+    margin-bottom: 15vh;
   }
   .header {
     top: 0;
