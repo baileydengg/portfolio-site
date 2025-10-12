@@ -26,17 +26,12 @@
   .experience-details-container {
     margin-top: 2rem;
   }
-
   #home {
     padding-top: 20vh;
     display: block;
   }
-
   .section-container {
     display: block;
-  }
-  .arrow {
-    display: none;
   }
   section,
   .section-container {
