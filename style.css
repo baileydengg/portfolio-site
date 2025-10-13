@@ -500,7 +500,18 @@ article .icon {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: black; 
+  color: black;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transform: scale(0.95);
 }
 
 .swiper-pagination-dots {
