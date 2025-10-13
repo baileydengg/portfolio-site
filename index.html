@@ -6,6 +6,10 @@
     <title>Bailey Deng's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -236,85 +240,100 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/deepracer.jpg"
-                alt="DeepRacer project"
-                class="project-img"
-              />
+      <div class="swiper-container">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="project-wrapper">
+                <div class="project-article-container">
+                  <img
+                    src="./assets/deepracer.jpg"
+                    alt="DeepRacer project"
+                    class="project-img"
+                  />
+                </div>
+                <div class="project-details-wrapper">
+                  <div class="project-text">
+                    <h2 class="experience-sub-title project-title">
+                      AWS DeepRacer
+                    </h2>
+                    <p>
+                      Trained an autonomous racing policy in Python that drives
+                      the AWS DeepRacer car around time-trial tracks as fast as
+                      possible while remaining on track and placing 38 out of
+                      678 submissions (top 6%) in the 2025 U.S. Open Practice
+                      leaderboard.
+                    </p>
+                  </div>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('./assets/DeepRacer_Final_Report.pdf')"
+                    >
+                      Project Report
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://drive.google.com/file/d/1Mk6uUtpXGWjSmTR_knO8OyZEf72rINWZ/view?usp=sharing'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">AWS DeepRacer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/1Mk6uUtpXGWjSmTR_knO8OyZEf72rINWZ/view?usp=sharing'"
-              >
-                Live Demo
-              </button>
+            <div class="swiper-slide">
+              <div class="project-wrapper">
+                <div class="project-article-container">
+                  <img
+                    src="./assets/search-engine.png"
+                    alt="Search engine project"
+                    class="project-img"
+                  />
+                </div>
+                <div class="project-details-wrapper">
+                  <div class="project-text">
+                    <h2 class="experience-sub-title project-title">
+                      UCI Search Engine
+                    </h2>
+                    <p>
+                      Wrote a Web search engine with an indexer and retrieval
+                      component from scratch that is capable of handling tens of
+                      thousands of Web pages, having a query response time time
+                      under 300ms all under harsh operational constraints.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-wrapper">
+                <div class="project-article-container">
+                  <img
+                    src="./assets/nuzlocke-bot.png"
+                    alt="Discord bot project"
+                    class="project-img"
+                  />
+                </div>
+                <div class="project-details-wrapper">
+                  <div class="project-text">
+                    <h2 class="experience-sub-title project-title">
+                      Pokemon Nuzlocke Discord Bot
+                    </h2>
+                    <p>
+                      Created a Discord bot using the Java Discord API (JDA) to
+                      function as a tracker for Pokemon nuzlockes with custom
+                      commands to record, edit, and delete Pokemon pairs
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/search-engine.png"
-                alt="Search engine project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              UCI Search Engine
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/nuzlocke-bot.png"
-                alt="Nuzlocke Discord Bot project"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Pokemon Nuzlocke Discord Bot
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/KarenCC0415/searchengine'"
-              >
-                GitHub
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+          <div class="swiper-pagination-dots"></div>
         </div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
     <section id="contact">
@@ -354,5 +373,23 @@
       <p>Copyright &#169; 2025 Bailey Deng. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination-dots",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
