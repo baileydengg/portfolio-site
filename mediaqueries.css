@@ -59,6 +59,18 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .project-wrapper {
+    display: block;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    visibility: hidden;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #contact,
   footer {
