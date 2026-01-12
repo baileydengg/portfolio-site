@@ -351,64 +351,6 @@ section {
   margin: auto;
 }
 
-/* SKILLS SECTION */
-
-#skills {
-  position: relative;
-  margin-bottom: 100px;
-}
-
-.skills-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.skills-details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: left;
-}
-
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-.skill-article {
-  align-items: center;
-  flex-direction: column;
-}
-
-.skill-article:hover {
-  transform: scale(1.05);
-  transition: all 200ms ease;
-}
-
-article {
-  display: flex;
-  height: 8rem;
-  width: 10rem;
-  justify-content: center;
-  gap: 0.5rem;
-  border-radius: 1rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-}
-
-article .icon {
-  cursor: default;
-}
-
 /* PROJECTS SECTION */
 
 #projects {
