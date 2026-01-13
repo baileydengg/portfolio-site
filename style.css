@@ -231,10 +231,6 @@ section {
   transition: all 200ms ease;
 }
 
-.skill-icon {
-  height: 3rem;
-}
-
 /* BUTTONS */
 
 .btn-container {
@@ -417,16 +413,13 @@ section {
 }
 
 .swiper-container {
-  position: relative;
   padding: 2.5rem;
   flex: 1;
+  background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 80%;
+  text-align: center;
 }
 
 .swiper-slide {
@@ -497,8 +490,13 @@ section {
   font-size: larger;
 }
 
+.contact-btn-container {
+  display: none;
+}
+
 .contact-icon {
   cursor: default;
+  pointer-events: none;
 }
 
 .email-icon {
