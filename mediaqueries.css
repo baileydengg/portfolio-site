@@ -136,8 +136,8 @@
   }
 }
 
-@media screen and (max-width: 380px) {
-  .btn-container {
+@media screen and (max-width: 450px) {
+  .btn-container.project {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
