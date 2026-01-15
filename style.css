@@ -29,7 +29,7 @@ a,
 /* TYPEWRITER EFFECT */
 
 .typewriter {
-  animation: typewriter 1.5s steps(12) 0.3s 1 normal both,
+  animation: typewriter 1.5s steps(12) 1s 1 normal both,
     cursor 600ms steps(40) infinite normal;
 }
 @keyframes typewriter {
@@ -214,7 +214,7 @@ section {
   width: 400px;
   align-self: center;
   justify-self: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .profile-pic {
@@ -258,7 +258,7 @@ section {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   width: 24em;
 }
