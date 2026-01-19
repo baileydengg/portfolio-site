@@ -150,15 +150,4 @@
     gap: 1rem;
     align-items: center;
   }
-  .contact-icon {
-    cursor: pointer;
-    pointer-events: auto;
-    height: 3rem;
-  }
-  .contact-btn-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
 }

@@ -32,18 +32,22 @@ a,
   animation: typewriter 1.5s steps(12) 1s 1 normal both,
     cursor 600ms steps(40) infinite normal;
 }
+
 @keyframes typewriter {
   from {
     width: 0;
   }
+
   to {
     width: 6em;
   }
 }
+
 @keyframes cursor {
   from {
     border-right-color: gray;
   }
+
   to {
     border-right-color: none;
   }
