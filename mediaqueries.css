@@ -155,12 +155,6 @@
     pointer-events: auto;
     height: 3rem;
   }
-  .email-icon {
-    height: 3.5rem;
-  }
-  .contact-info-upper-container {
-    display: none;
-  }
   .contact-btn-container {
     display: flex;
     gap: 2rem;

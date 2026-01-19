@@ -1,353 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bailey Deng's Portfolio</title>
-    <link rel="icon" type="image/png" href="./assets/letter-b.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="header">
-      <nav id="desktop-nav">
-        <div class="logo"><a href="#home">Bailey Deng</a></div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="header">
-      <nav id="hamburger-nav">
-        <div class="logo"><a href="#home">Bailey Deng</a></div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <section id="home">
-      <div class="home-pic-container">
-        <img
-          src="./assets/profile-pic.jpg"
-          alt="Bailey Deng's profile picture"
-          class="profile-pic"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1 home">Hello, I'm</p>
-        <h1 class="title home typewriter">Bailey Deng</h1>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/BaileyDeng_Resume.pdf')"
-          >
-            Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon animated-icon"
-            onclick="window.open('https://www.linkedin.com/in/bailey-deng/')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="GitHub icon"
-            class="icon animated-icon"
-            onclick="window.open('https://github.com/baileydengg')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Side profile picture of Bailey Deng"
-            class="about-pic"
-          />
-        </div>
-        <div>
-          <div class="education-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/uci-logo.png"
-                  alt="University of California, Irvine logo"
-                  class="uci-logo"
-                  style="height: 5.5rem"
-                />
-                <h3>Education</h3>
-                <p>
-                  Bachelor's in Computer Science <br />University of California,
-                  Irvine
-                </p>
-                <div class="coursework-container">
-                  <h3>Relevant coursework:</h3>
-                  <ul class="coursework-list">
-                    <li>
-                      Design and Analysis of Data Structures and Algorithms
-                    </li>
-                    <li>Neural Networks and Deep Learning</li>
-                    <li>Information Retrieval</li>
-                    <li>Data Mining and Machine Learning</li>
-                    <li>Data Management</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-container">
-        <p style="margin-bottom: 20px">
-          As a <strong>computer science student</strong> at the
-          <strong>University of California, Irvine</strong>, I specialize in
-          information and artificial intelligence. I am passionate about how I
-          can contribute to the informational data, financial, and healthtech
-          sectors with all the skills I have developed.
-        </p>
-        <p style="margin-bottom: 20px">
-          I like figuring out how things work and seeing things come together.
-          Seeing programs from start to finish brings me great joy, and creating
-          innovative solutions and software to help the community and the world
-          is my ultimate goal.
-        </p>
-        <p>
-          When I am not working on personal projects to entertain myself and my
-          friends, you can find me hanging out with said friends, listening to
-          music, playing volleyball, and constantly pushing myself to become a
-          better person usually by working out or going on long walks with no
-          destination in mind.
-        </p>
-      </div>
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Check Out My Featured</p>
-      <h1 class="title">Projects</h1>
-      <div class="swiper-container">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="project-wrapper">
-                <div class="project-article-container">
-                  <img
-                    src="./assets/deepracer.jpg"
-                    alt="DeepRacer project"
-                    class="project-img"
-                  />
-                </div>
-                <div class="project-details-wrapper">
-                  <div class="project-text">
-                    <h2 class="experience-sub-title project-title">
-                      AWS DeepRacer
-                    </h2>
-                    <p>
-                      Trained an autonomous racing policy in Python that drives
-                      the AWS DeepRacer car around time-trial tracks as fast as
-                      possible while remaining on track and placing 38 out of
-                      678 submissions (top 6%) in the 2025 U.S. Open Practice
-                      leaderboard.
-                    </p>
-                  </div>
-                  <div class="btn-container project">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('./assets/DeepRacer_Final_Report.pdf')"
-                    >
-                      Project Report
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://drive.google.com/file/d/1Mk6uUtpXGWjSmTR_knO8OyZEf72rINWZ/view?usp=sharing'"
-                    >
-                      Live Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-wrapper">
-                <div class="project-article-container">
-                  <img
-                    src="./assets/flambae_logo.png"
-                    alt="Flambae logo"
-                    class="project-img"
-                  />
-                </div>
-                <div class="project-details-wrapper">
-                  <div class="project-text">
-                    <h2 class="experience-sub-title project-title">Flambae</h2>
-                    <p>
-                      Designed a prototype of a web app to help users find
-                      recipes to cook based on a dating app matching/swiping
-                      structure.
-                    </p>
-                  </div>
-                  <div class="btn-container project">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/baileydengg'"
-                    >
-                      GitHub
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://flambae.figma.site'"
-                    >
-                      Link
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-wrapper">
-                <div class="project-article-container">
-                  <img
-                    src="./assets/search-engine.png"
-                    alt="Search engine project"
-                    class="project-img"
-                  />
-                </div>
-                <div class="project-details-wrapper">
-                  <div class="project-text">
-                    <h2 class="experience-sub-title project-title">
-                      UCI Search Engine
-                    </h2>
-                    <p>
-                      Wrote a Web search engine with an indexer and retrieval
-                      component from scratch that is capable of handling tens of
-                      thousands of Web pages, having a query response time time
-                      under 300ms all under harsh operational constraints.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-wrapper">
-                <div class="project-article-container">
-                  <img
-                    src="./assets/nuzlocke-bot.png"
-                    alt="Discord bot project"
-                    class="project-img"
-                  />
-                </div>
-                <div class="project-details-wrapper">
-                  <div class="project-text">
-                    <h2 class="experience-sub-title project-title">
-                      Pokemon Nuzlocke Discord Bot
-                    </h2>
-                    <p>
-                      Created a Discord bot using the Java Discord API (JDA) to
-                      function as a tracker for Pokemon nuzlockes with custom
-                      commands to record, edit, and delete Pokemon pairs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination-dots"></div>
-        </div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Let's Get in Touch</p>
-      <h1 class="title">Connect With Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-            onclick="window.open('mailto:dengbailey03@gmail.com')"
-          />
-          <p>
-            <a href="mailto:dengbailey03@gmail.com">dengbailey03@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-            onclick="window.open('https://www.linkedin.com/in/bailey-deng')"
-          />
-          <p><a href="https://www.linkedin.com/in/bailey-deng">LinkedIn</a></p>
-        </div>
-      </div>
-      <div class="contact-btn-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-          onclick="window.open('mailto:dengbailey03@gmail.com')"
-        />
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-          onclick="window.open('https://www.linkedin.com/in/bailey-deng')"
-        />
-      </div>
-    </section>
-    <footer>
-      <p>Thanks for visiting!</p>
-      <p>Copyright &#169; 2026 Bailey Deng. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bailey Deng's Portfolio</title>
+  <link rel="icon" type="image/png" href="./assets/letter-b.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        loop: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: true,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination-dots",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
-  </body>
+<body>
+  <div class="header">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#home">Bailey Deng</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="header">
+    <nav id="hamburger-nav">
+      <div class="logo"><a href="#home">Bailey Deng</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section id="home">
+    <div class="home-pic-container">
+      <img src="./assets/profile-pic.jpg" alt="Bailey Deng's profile picture" class="profile-pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1 home">Hello, I'm</p>
+      <h1 class="title home typewriter">Bailey Deng</h1>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/BaileyDeng_Resume.pdf')">
+          Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Side profile picture of Bailey Deng" class="about-pic" />
+      </div>
+      <div>
+        <div class="education-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/uci-logo.png" alt="University of California, Irvine logo" class="uci-logo"
+                style="height: 5.5rem" />
+              <h3>Education</h3>
+              <p>
+                Bachelor's in Computer Science <br />University of California,
+                Irvine
+              </p>
+              <div class="coursework-container">
+                <h3>Relevant coursework:</h3>
+                <ul class="coursework-list">
+                  <li>
+                    Design and Analysis of Data Structures and Algorithms
+                  </li>
+                  <li>Neural Networks and Deep Learning</li>
+                  <li>Information Retrieval</li>
+                  <li>Data Mining and Machine Learning</li>
+                  <li>Data Management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <p style="margin-bottom: 20px">
+        As a <strong>computer science student</strong> at the
+        <strong>University of California, Irvine</strong>, I specialize in
+        information and artificial intelligence. I am passionate about how I
+        can contribute to the informational data, financial, and healthtech
+        sectors with all the skills I have developed.
+      </p>
+      <p style="margin-bottom: 20px">
+        I like figuring out how things work and seeing things come together.
+        Seeing programs from start to finish brings me great joy, and creating
+        innovative solutions and software to help the community and the world
+        is my ultimate goal.
+      </p>
+      <p>
+        When I am not working on personal projects to entertain myself and my
+        friends, you can find me hanging out with said friends, listening to
+        music, playing volleyball, and constantly pushing myself to become a
+        better person usually by working out or going on long walks with no
+        destination in mind.
+      </p>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Check Out My Featured</p>
+    <h1 class="title">Projects</h1>
+    <div class="swiper-container">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project-wrapper">
+              <div class="project-article-container">
+                <img src="./assets/deepracer.jpg" alt="DeepRacer project" class="project-img" />
+              </div>
+              <div class="project-details-wrapper">
+                <div class="project-text">
+                  <h2 class="experience-sub-title project-title">
+                    AWS DeepRacer
+                  </h2>
+                  <p>
+                    Trained an autonomous racing policy in Python that drives
+                    the AWS DeepRacer car around time-trial tracks as fast as
+                    possible while remaining on track and placing 38 out of
+                    678 submissions (top 6%) in the 2025 U.S. Open Practice
+                    leaderboard.
+                  </p>
+                </div>
+                <div class="btn-container project">
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="window.open('./assets/DeepRacer_Final_Report.pdf')">
+                    Project Report
+                  </button>
+                  <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://drive.google.com/file/d/1Mk6uUtpXGWjSmTR_knO8OyZEf72rINWZ/view?usp=sharing'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-wrapper">
+              <div class="project-article-container">
+                <img src="./assets/flambae_logo.png" alt="Flambae logo" class="project-img" />
+              </div>
+              <div class="project-details-wrapper">
+                <div class="project-text">
+                  <h2 class="experience-sub-title project-title">Flambae</h2>
+                  <p>
+                    Designed a prototype of a web app to help users find
+                    recipes to cook based on a dating app matching/swiping
+                    structure.
+                  </p>
+                </div>
+                <div class="btn-container project">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/baileydengg'">
+                    GitHub
+                  </button>
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://flambae.figma.site'">
+                    Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-wrapper">
+              <div class="project-article-container">
+                <img src="./assets/search-engine.png" alt="Search engine project" class="project-img" />
+              </div>
+              <div class="project-details-wrapper">
+                <div class="project-text">
+                  <h2 class="experience-sub-title project-title">
+                    UCI Search Engine
+                  </h2>
+                  <p>
+                    Wrote a Web search engine with an indexer and retrieval
+                    component from scratch that is capable of handling tens of
+                    thousands of Web pages, having a query response time time
+                    under 300ms all under harsh operational constraints.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-wrapper">
+              <div class="project-article-container">
+                <img src="./assets/nuzlocke-bot.png" alt="Discord bot project" class="project-img" />
+              </div>
+              <div class="project-details-wrapper">
+                <div class="project-text">
+                  <h2 class="experience-sub-title project-title">
+                    Pokemon Nuzlocke Discord Bot
+                  </h2>
+                  <p>
+                    Created a Discord bot using the Java Discord API (JDA) to
+                    function as a tracker for Pokemon nuzlockes with custom
+                    commands to record, edit, and delete Pokemon pairs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination-dots"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"
+          onclick="window.open('mailto:dengbailey03@gmail.com')" />
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
+          onclick="window.open('https://www.linkedin.com/in/bailey-deng')" />
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon"
+          onclick="window.open('https://github.com/baileydengg')" />
+      </div>
+    </div>
+    <p>Thanks for visiting!</p>
+    <p>Copyright &#169; 2026 Bailey Deng. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination-dots",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+
 </html>
