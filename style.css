@@ -246,11 +246,6 @@ section {
   font-size: 2rem;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-}
-
 .title {
   font-size: 3rem;
   text-align: center;
@@ -408,9 +403,13 @@ section {
   position: relative;
 }
 
-.color-container {
+.project-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  border-width: 0.1rem;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 2.5rem;
 }
 
 .project-wrapper {
@@ -475,10 +474,13 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   margin-top: 1rem;
+  margin-bottom: 1.7rem;
 }
 
 .swiper-slide {
