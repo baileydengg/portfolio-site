@@ -32,18 +32,22 @@ a,
   animation: typewriter 1.5s steps(12) 1s 1 normal both,
     cursor 600ms steps(40) infinite normal;
 }
+
 @keyframes typewriter {
   from {
     width: 0;
   }
+
   to {
     width: 6em;
   }
 }
+
 @keyframes cursor {
   from {
     border-right-color: gray;
   }
+
   to {
     border-right-color: none;
   }
@@ -524,11 +528,8 @@ section {
 
 .contact-info-upper-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -549,15 +550,6 @@ section {
   display: none;
 }
 
-.contact-icon {
-  cursor: default;
-  pointer-events: none;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
 /* FOOTER SECTION */
 
 footer {
@@ -567,4 +559,5 @@ footer {
 
 footer p {
   text-align: center;
+  font-size: larger;
 }
