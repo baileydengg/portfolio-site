@@ -49,7 +49,7 @@ a,
   }
 
   to {
-    border-right-color: none;
+    border-right-color: transparent;
   }
 }
 
@@ -222,8 +222,7 @@ section {
 }
 
 .profile-pic {
-  border-radius: 100rem;
-  border-width: 1%;
+  border-radius: 20rem;
   border-style: solid;
   border-color: whitesmoke;
   box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
@@ -299,7 +298,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1 rem solid;
+  border: 0.15rem solid rgb(53, 53, 53);
 }
 
 .btn-color-1:hover,
@@ -319,10 +318,6 @@ section {
 
 .btn-color-2 {
   background: none;
-}
-
-.btn-col0or-2:hover {
-  background: rgb(255, 255, 255) 0.1rem solid;
 }
 
 /* ABOUT SECTION */
