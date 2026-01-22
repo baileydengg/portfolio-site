@@ -520,7 +520,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 30vh;
 }
 
 .contact-info-upper-container {
@@ -550,8 +550,12 @@ section {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  margin-top: 7%;
+  height: 20vh;
+  padding: 0 20px;
+  background: #fafafa;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #e5e7eb;
 }
 
 footer p {
