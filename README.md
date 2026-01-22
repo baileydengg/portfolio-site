@@ -1,8 +1,8 @@
 Note: I am submitting a portfolio that I made prior to this course.
-In terms of thigns I have changed since making it in the past, I removed unnecessary elements and simplified everything overall.
-This includes removing a 'skills' section as well as making sure the portfolio would dynamically adjust for other screens.
+In terms of things I have changed since making it in the past, I removed some unnecessary elements and simplified everything overall.
+This includes removing a 'skills' section as well as making sure the portfolio would dynamically adjust for other screen sizes.
 
-I believe that I completed all of the possible assignment points. While I initially created this portfolio in October last year and had made small changes here and there, since A1 was announced, 
+I believe that I completed all of the possible assignment points. While I initially created this portfolio in October last year and had made small changes here and there, since assignment A1 was announced, 
 I have worked on it for a little over a week.
 
 Basic HTML:
